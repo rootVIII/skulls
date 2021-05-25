@@ -4,7 +4,7 @@
 All development/debugging was done with the <b>gomobile</b> tool and <b>adb</b>.
 
 
-<img src="https://drive.google.com/file/d/1tAufXl4P0-Myp-SlrFy3WCsW_RM4EoV3/view?usp=sharing">
+<img src="https://images2.imgbox.com/a6/ab/4hlQKK3q_o.png" alt="ex2"/>
 
 
 ###### Run in a local testing environment:
@@ -26,7 +26,7 @@ alias pixel4='$ANDROID_HOME/emulator/emulator -avd "Pixel_4_API_30"'
 </pre>
 
 
-<img src="https://drive.google.com/file/d/15aOWeVXQadXGdsxOz08BbjhLFNSNEECq/view?usp=sharing">
+<img src="https://images2.imgbox.com/1d/4c/i9yuv83m_o.png" alt="ex1"/></a>
 
 
 This was developed on macOS Big Sur.
