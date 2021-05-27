@@ -1,9 +1,6 @@
 ### Skulls is simple Columns-like strategy game developed in Golang with the Ebiten library (for Android)
 
 
-All development/debugging was done with the <b>gomobile</b> tool and <b>adb</b>.
-
-
 <img src="https://images2.imgbox.com/a6/ab/4hlQKK3q_o.png" alt="ex2"/>
 
 
@@ -28,14 +25,17 @@ alias pixel4='$ANDROID_HOME/emulator/emulator -avd "Pixel_4_API_30"'
 
 <img src="https://images2.imgbox.com/1d/4c/i9yuv83m_o.png" alt="ex1"/></a>
 
-<ol>
+<ul>
+  <li>
+    All development/debugging was done with the <b>gomobile</b> tool and <b>adb</b>.
+  </li>
   <li>
     Font used for text: <a href="https://www.dafont.com/radioland.font">RADIOLAND.TTF</a> 
   </li>
   <li>
   All assets (images, audio, and font) were converted to <code>[]byte</code> using <a href="https://github.com/hajimehoshi/file2byteslice">file2byteslice</a>
   </li>
-</ol>
+</ul>
 
 
 This was developed on macOS Big Sur.
