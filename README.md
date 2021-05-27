@@ -28,6 +28,15 @@ alias pixel4='$ANDROID_HOME/emulator/emulator -avd "Pixel_4_API_30"'
 
 <img src="https://images2.imgbox.com/1d/4c/i9yuv83m_o.png" alt="ex1"/></a>
 
+<ol>
+  <li>
+    Font used for text: <a href="https://www.dafont.com/radioland.font">RADIOLAND.TTF</a> 
+  </li>
+  <li>
+  All assets (images, audio, and font) were converted to <code>[]byte</code> using <a href="https://github.com/hajimehoshi/file2byteslice">file2byteslice</a>
+  </li>
+</ol>
+
 
 This was developed on macOS Big Sur.
 <hr>
