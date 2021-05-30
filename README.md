@@ -30,6 +30,7 @@ alias pixel4='$ANDROID_HOME/emulator/emulator -avd "Pixel_4_API_30"'
   </code>
 </pre>
 
+<hr>
 
 ###### ebitenmobile, build .aar for Android Studio binding:
 
