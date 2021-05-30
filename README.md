@@ -4,7 +4,7 @@
 <img src="https://images2.imgbox.com/a6/ab/4hlQKK3q_o.png" alt="ex2"/>
 
 
-###### Run in a local testing environment:
+###### gomobile, build .apk for development and testing:
 
 <pre>
   <code>
@@ -23,7 +23,15 @@ alias pixel4='$ANDROID_HOME/emulator/emulator -avd "Pixel_4_API_30"'
 </pre>
 
 
-<img src="https://images2.imgbox.com/1d/4c/i9yuv83m_o.png" alt="ex1"/></a>
+###### ebitenmobile, build .aar for Android Studio binding:
+
+<pre>
+  <code>
+// Navigate to skulls/ and generate the <code>.aar</code> binding:
+ebitenmobile bind -target android -javapkg com.&lt;your username&gt;.skulls -o skulls.aar github.com/rootVIII/skulls/skullsebitenbind
+  </code>
+</pre>
+
 
 <ul>
   <li>

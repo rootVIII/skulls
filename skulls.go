@@ -619,7 +619,7 @@ func readAudio(context *audio.Context, asset []byte) (*audio.Player, error) {
 }
 
 // Play is the entry point to the game.
-func Play() (*Game, error) {
+func Load() (*Game, error) {
 
 	audioContext := audio.NewContext(44100)
 
@@ -694,22 +694,10 @@ func Play() (*Game, error) {
 	game.clear.SetVolume(.50)
 	game.beep.SetVolume(.50)
 
-	// for _, item := range game.skullCollector {
-	// 	fmt.Printf("%v\n", item)
-	// }
-
-	// for _, item := range game.skullCoords {
-	// 	fmt.Printf("%v\n", item)
-	// }
-
 	game.spawn()
 
 	ebiten.SetWindowSize(screenW, screenH)
 	ebiten.SetWindowTitle("💀")
-
-	if err := ebiten.RunGame(game); err != nil {
-		return nil, err
-	}
 
 	return game, nil
 }

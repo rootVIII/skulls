@@ -7,11 +7,11 @@ import (
 
 func init() {
 
-	sp, err := skulls.Play()
+	game, err := skulls.Load()
 	if err != nil {
 		panic(err)
 	}
-	mobile.SetGame(sp)
+	mobile.SetGame(game)
 }
 
 // Dummy forces gomobile to compile this package.
