@@ -136,6 +136,7 @@ class EbitenViewWithErrorHandling extends EbitenView {
         android:focusable="true" /&gt;
 &lt;/RelativeLayout&gt;
 
+The game should now load in one of the emulators that comes with Android Studio
   </code>
 </pre>
 
