@@ -75,7 +75,7 @@ package com.solsticenet.skullsmobile;
 import android.content.Context;
 import android.util.AttributeSet;
 
-import com.solsticenet.skulls.skullsebitenbind.EbitenView;
+import com.&lt;your-username&gt;.skulls.skullsebitenbind.EbitenView;
 
 
 class EbitenViewWithErrorHandling extends EbitenView {
