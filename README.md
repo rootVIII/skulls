@@ -8,16 +8,22 @@
 
 <pre>
   <code>
+// 1.
 // Navigate to skulls/ and generate a <code>.apk</code> with skullsgomobile/:
 gomobile build -target=android github.com/rootVIII/skulls/skullsgomobile
 
+
+// 2.
 // Install the newly created .apk into an already running Android Emulator (from Android Studio):
 adb -s emulator-5554  install skullsgomobile.apk
 
+
+// 3. 
 // view logging output from the game:
 adb logcat
 
-// Note that I use a pixel4 emulator. I have an alias stored in my profile to open it easily via terminal:
+
+// Note that I use a pixel4 emulator. I have an alias stored in my profile to open it easily via terminal with the command pixel4:
 alias pixel4='$ANDROID_HOME/emulator/emulator -avd "Pixel_4_API_30"'
   </code>
 </pre>
@@ -27,15 +33,16 @@ alias pixel4='$ANDROID_HOME/emulator/emulator -avd "Pixel_4_API_30"'
 
 <pre>
   <code>
+// 1.
 // Navigate to skulls/ and generate the <code>.aar</code> binding:
 ebitenmobile bind -target android -javapkg com.&lt;your-username&gt;.skulls -o skulls.aar github.com/rootVIII/skulls/skullsebitenbind
 
 
-
+// 2.
 // Open an Empty Activity in Android Studio and name it SkullsMobile
 
 
-
+// 3.
 // Import the new .aar as a module:
 // Select File, New, New Module, Import .jar/.aar Package, select the previously built .aar named skulls.aar
 // In app/build.gradle, add this line to the dependencies: compile project(':skulls')
@@ -51,7 +58,7 @@ dependencies {
 // Then synch the change to the build.gradle for the project
 
 
-
+// 4.
 // Place the following in app/src/main/java/&lt;your username&gt;/MainActivity.java:
 package com.&lt;your-username&gt;.skullsmobile;
 
@@ -90,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
 }
 
 
-
+// 5.
 // Add a separate error handling class in app/src/main/java/&lt;your-username&gt;/EbitenViewWithErrorHandling.java
 package com.solsticenet.skullsmobile;
 
@@ -118,7 +125,7 @@ class EbitenViewWithErrorHandling extends EbitenView {
 }
 
 
-
+// 6.
 // Add the below into app/src/main/res/AndroidManifest.xml:
 &lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -136,7 +143,9 @@ class EbitenViewWithErrorHandling extends EbitenView {
         android:focusable="true" /&gt;
 &lt;/RelativeLayout&gt;
 
-The game should now load in one of the emulators that comes with Android Studio
+
+// 7.
+// The game should now load in one of the emulators that comes with Android Studio
   </code>
 </pre>
 
