@@ -30,8 +30,24 @@ alias pixel4='$ANDROID_HOME/emulator/emulator -avd "Pixel_4_API_30"'
 // Navigate to skulls/ and generate the <code>.aar</code> binding:
 ebitenmobile bind -target android -javapkg com.&lt;your-username&gt;.skulls -o skulls.aar github.com/rootVIII/skulls/skullsebitenbind
 
-// Import the new .aar as a module
-// in app/src/main/java/&lt;your username&gt;/MainActivity.java place the following:
+// Open an Empty Activity in Android Studio and name it SkullsMobile
+
+// Import the new .aar as a module:
+// Select File, New, New Module, Import .jar/.aar Package, select the previously built .aar named skulls.aar
+// In app/build.gradle, add this line to the dependencies: compile project(':skulls')
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    compile project(':skulls')
+}
+// Then synch the change to the build.gradle
+
+
+// Place the following in app/src/main/java/&lt;your username&gt;/MainActivity.java:
 
 package com.&lt;your-username&gt;.skullsmobile;
 
@@ -69,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
-// add a separate error handling class in app/src/main/java/&lt;your username&gt;/EbitenViewWithErrorHandling.java
+// Add a separate error handling class in app/src/main/java/&lt;your-username&gt;/EbitenViewWithErrorHandling.java
 package com.solsticenet.skullsmobile;
 
 import android.content.Context;
@@ -98,24 +114,20 @@ class EbitenViewWithErrorHandling extends EbitenView {
 
 // Add the below into app/src/main/res/AndroidManifest.xml:
 &lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.&lt;your-username&gt;.skullsmobile"&gt;
+&lt;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material_dark"
+    android:keepScreenOn="true"
+    tools:context="com.&lt;your-username&gt;.skullsmobile.MainActivity"&gt;
 
-    &lt;application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.SkullsMobile"&gt;
-        &lt;activity android:name=".MainActivity"&gt;
-            &lt;intent-filter&gt;
-                &lt;action android:name="android.intent.action.MAIN" /&gt;
-                &lt;category android:name="android.intent.category.LAUNCHER" /&gt;
-            &lt;/intent-filter&gt;
-        &lt;/activity&gt;
-    &lt;/application&gt;
-&lt;/manifest&gt;
+    &lt;com.solsticenet.skullsmobile.EbitenViewWithErrorHandling
+        android:id="@+id/ebitenview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true" /&gt;
+&lt;/RelativeLayout&gt;
 
   </code>
 </pre>
