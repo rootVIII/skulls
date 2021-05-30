@@ -5,7 +5,6 @@
 <hr>
 <img src="https://images2.imgbox.com/c1/39/6ZRij2QF_o.png" alt="ex2"/>
 
-
 ###### gomobile, build .apk for development and testing:
 
 <pre>
