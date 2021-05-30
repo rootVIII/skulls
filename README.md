@@ -28,7 +28,96 @@ alias pixel4='$ANDROID_HOME/emulator/emulator -avd "Pixel_4_API_30"'
 <pre>
   <code>
 // Navigate to skulls/ and generate the <code>.aar</code> binding:
-ebitenmobile bind -target android -javapkg com.&lt;your username&gt;.skulls -o skulls.aar github.com/rootVIII/skulls/skullsebitenbind
+ebitenmobile bind -target android -javapkg com.&lt;your-username&gt;.skulls -o skulls.aar github.com/rootVIII/skulls/skullsebitenbind
+
+// Import the new .aar as a module
+// in app/src/main/java/&lt;your username&gt;/MainActivity.java place the following:
+
+package com.&lt;your-username&gt;.skullsmobile;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+import go.Seq;
+import com.&lt;your-username&gt;.skulls.skullsebitenbind.EbitenView;
+
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Seq.setContext(getApplicationContext());
+    }
+
+    private EbitenView getEbitenView() {
+        return (EbitenView)this.findViewById(R.id.ebitenview);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        this.getEbitenView().suspendGame();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        this.getEbitenView().resumeGame();
+    }
+}
+
+// add a separate error handling class in app/src/main/java/&lt;your username&gt;/EbitenViewWithErrorHandling.java
+package com.solsticenet.skullsmobile;
+
+import android.content.Context;
+import android.util.AttributeSet;
+
+import com.solsticenet.skulls.skullsebitenbind.EbitenView;
+
+
+class EbitenViewWithErrorHandling extends EbitenView {
+    public EbitenViewWithErrorHandling(Context context) {
+        super(context);
+    }
+
+    public EbitenViewWithErrorHandling(Context context, AttributeSet attributeSet) {
+        super(context, attributeSet);
+    }
+
+    @Override
+    protected void onErrorOnGameUpdate(Exception e) {
+        // You can define your own error handling e.g., using Crashlytics.
+        // e.g., Crashlytics.logException(e);
+        super.onErrorOnGameUpdate(e);
+    }
+}
+
+
+// Add the below into app/src/main/res/AndroidManifest.xml:
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.&lt;your-username&gt;.skullsmobile"&gt;
+
+    &lt;application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SkullsMobile"&gt;
+        &lt;activity android:name=".MainActivity"&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="android.intent.action.MAIN" /&gt;
+
+                &lt;category android:name="android.intent.category.LAUNCHER" /&gt;
+            &lt;/intent-filter&gt;
+        &lt;/activity&gt;
+    &lt;/application&gt;
+&lt;/manifest&gt;
+
   </code>
 </pre>
 
