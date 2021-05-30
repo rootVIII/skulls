@@ -3,7 +3,7 @@
 <hr>
 <img src="https://images2.imgbox.com/a6/ab/4hlQKK3q_o.png" alt="ex1"/>
 <hr>
-<img src="https://images2.imgbox.com/c1/39/6ZRij2QF_o.png" alt="ex2"/>
+<img src="https://images2.imgbox.com/5f/91/zXqDD7WR_o.png" alt="ex2"/>
 
 ###### gomobile, build .apk for development and testing:
 
