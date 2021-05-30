@@ -5,6 +5,35 @@
 <hr>
 <img src="https://images2.imgbox.com/5f/91/zXqDD7WR_o.png" alt="ex2"/>
 
+
+
+<ul>
+  <li>
+    The game was developed as a POC and to experience creating a simple game with Go/deploying it to Android.
+  </li>
+  <li>
+     The <a href="https://ebiten.org/" target="_blank">Ebiten</a> library for Golang was used to create the game.
+  </li>
+  <li>
+    All development/debugging was done with the <b>gomobile</b> tool and <b>adb</b>.
+  </li>
+  <li>
+    Android Studio should be downloaded/installed; the AVD emulators are free and convenient
+  </li>
+  <li>
+    I typically use a pixel4 emulator.
+  </li>
+  <li>
+    I store an alias in my profile to open an emulator easily via the terminal: <code>alias pixel4='$ANDROID_HOME/emulator/emulator -avd "Pixel_4_API_30"'</code>
+  </li>
+  <li>
+    Font used for text: <a href="https://www.dafont.com/radioland.font">RADIOLAND.TTF</a> 
+  </li>
+  <li>
+    All assets (images, audio, and font) were converted to <code>[]byte</code> using <a href="https://github.com/hajimehoshi/file2byteslice">file2byteslice</a>
+  </li>
+</ul>
+
 ###### gomobile, build .apk for development and testing:
 
 <pre>
@@ -17,15 +46,14 @@ gomobile build -target=android github.com/rootVIII/skulls/skullsgomobile
 // 2.
 // Install the newly created .apk into an already running Android Emulator (from Android Studio):
 adb -s emulator-5554  install skullsgomobile.apk
+// Note: to list available emulators: adb devices -l
 
 
 // 3. 
-// view logging output from the game:
+// View logging output from the game:
 adb logcat
 
 
-// Note that I use a pixel4 emulator. I have an alias stored in my profile to open it easily via terminal with the command pixel4:
-alias pixel4='$ANDROID_HOME/emulator/emulator -avd "Pixel_4_API_30"'
   </code>
 </pre>
 <br>
@@ -152,19 +180,6 @@ class EbitenViewWithErrorHandling extends EbitenView {
 </pre>
 
 <br>
-
-<ul>
-  <li>
-    All development/debugging was done with the <b>gomobile</b> tool and <b>adb</b>.
-  </li>
-  <li>
-    Font used for text: <a href="https://www.dafont.com/radioland.font">RADIOLAND.TTF</a> 
-  </li>
-  <li>
-  All assets (images, audio, and font) were converted to <code>[]byte</code> using <a href="https://github.com/hajimehoshi/file2byteslice">file2byteslice</a>
-  </li>
-</ul>
-
 
 This was developed on macOS Big Sur.
 <hr>
