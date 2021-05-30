@@ -134,6 +134,7 @@ class EbitenViewWithErrorHandling extends EbitenView {
     android:layout_height="match_parent"
     android:background="@color/background_material_dark"
     android:keepScreenOn="true"
+    android:screenOrientation="portrait"
     tools:context="com.&lt;your-username&gt;.skullsmobile.MainActivity"&gt;
 
     &lt;com.&lt;your-username&gt;.skullsmobile.EbitenViewWithErrorHandling
