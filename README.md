@@ -28,7 +28,7 @@ adb logcat
 alias pixel4='$ANDROID_HOME/emulator/emulator -avd "Pixel_4_API_30"'
   </code>
 </pre>
-
+<br>
 
 ###### ebitenmobile, build .aar for Android Studio binding:
 
@@ -151,6 +151,7 @@ class EbitenViewWithErrorHandling extends EbitenView {
   </code>
 </pre>
 
+<br>
 
 <ul>
   <li>
