@@ -122,7 +122,7 @@ class EbitenViewWithErrorHandling extends EbitenView {
     android:keepScreenOn="true"
     tools:context="com.&lt;your-username&gt;.skullsmobile.MainActivity"&gt;
 
-    &lt;com.solsticenet.skullsmobile.EbitenViewWithErrorHandling
+    &lt;com.&lt;your-username&gt;.skullsmobile.EbitenViewWithErrorHandling
         android:id="@+id/ebitenview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
