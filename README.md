@@ -5,7 +5,7 @@
 <hr>
 <img src="https://images2.imgbox.com/5f/91/zXqDD7WR_o.png" alt="ex2"/>
 <hr>
-<img src="https://images2.imgbox.com/29/05/plTeQpBm_o.jpg" alt="ex3" width="200" height="375" />
+<img src="https://images2.imgbox.com/29/05/plTeQpBm_o.jpg" alt="ex3" width="175" height="375" />
 
 
 <ul>
