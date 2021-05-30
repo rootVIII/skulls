@@ -30,7 +30,11 @@ alias pixel4='$ANDROID_HOME/emulator/emulator -avd "Pixel_4_API_30"'
 // Navigate to skulls/ and generate the <code>.aar</code> binding:
 ebitenmobile bind -target android -javapkg com.&lt;your-username&gt;.skulls -o skulls.aar github.com/rootVIII/skulls/skullsebitenbind
 
+
+
 // Open an Empty Activity in Android Studio and name it SkullsMobile
+
+
 
 // Import the new .aar as a module:
 // Select File, New, New Module, Import .jar/.aar Package, select the previously built .aar named skulls.aar
@@ -44,11 +48,11 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     compile project(':skulls')
 }
-// Then synch the change to the build.gradle
+// Then synch the change to the build.gradle for the project
+
 
 
 // Place the following in app/src/main/java/&lt;your username&gt;/MainActivity.java:
-
 package com.&lt;your-username&gt;.skullsmobile;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -85,6 +89,8 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
+
+
 // Add a separate error handling class in app/src/main/java/&lt;your-username&gt;/EbitenViewWithErrorHandling.java
 package com.solsticenet.skullsmobile;
 
@@ -110,6 +116,7 @@ class EbitenViewWithErrorHandling extends EbitenView {
         super.onErrorOnGameUpdate(e);
     }
 }
+
 
 
 // Add the below into app/src/main/res/AndroidManifest.xml:
