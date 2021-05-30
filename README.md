@@ -1,4 +1,4 @@
-### Skulls is simple Columns-like strategy game developed in Golang with the Ebiten library (for Android)
+### Skulls! A simple Columns-like strategy game developed in Golang with the Ebiten library (for Android)
 
 <hr>
 <img src="https://images2.imgbox.com/a6/ab/4hlQKK3q_o.png" alt="ex1"/>
