@@ -111,7 +111,6 @@ class EbitenViewWithErrorHandling extends EbitenView {
         &lt;activity android:name=".MainActivity"&gt;
             &lt;intent-filter&gt;
                 &lt;action android:name="android.intent.action.MAIN" /&gt;
-
                 &lt;category android:name="android.intent.category.LAUNCHER" /&gt;
             &lt;/intent-filter&gt;
         &lt;/activity&gt;
