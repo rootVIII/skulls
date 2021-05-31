@@ -39,8 +39,7 @@
 
 <pre>
   <code>
-// 1.
-// Navigate to skulls/ and generate a <code>.apk</code> with gomobile:
+// 1. Navigate to skulls/ and generate a <code>.apk</code> with gomobile:
 gomobile build -target=android github.com/rootVIII/skulls/skullsgomobile
 
 
