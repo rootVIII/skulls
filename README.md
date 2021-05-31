@@ -176,6 +176,7 @@ class EbitenViewWithErrorHandling extends EbitenView {
 
 
 // 7. The game should now be usable in Android Studio (sign the project with developer keys, UI adjustments in AndroidManifest.xml etc.)
+  </code>
 </pre>
 
 <br>
