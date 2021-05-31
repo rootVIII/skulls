@@ -45,7 +45,8 @@ gomobile build -target=android github.com/rootVIII/skulls/skullsgomobile
 
 // 2. Install the newly created .apk into an already running Android Emulator:
 adb -s &lt;emulator-name&gt; install skullsgomobile.apk
-// Note: to list available emulators: adb devices -l
+// Note: to list available emulators (including phone connected for debugging):
+adb devices -l
 
 
 // 3.  View debug/logging output from the game:
