@@ -10,7 +10,7 @@
 
 <ul>
   <li>
-    The game was developed as a POC and to experience creating a simple game with Go/deploying it to Android.
+    The game was developed as a POC to experience creating a simple game with Go/deploying it to Android.
   </li>
   <li>
      The <a href="https://ebiten.org/" target="_blank">Ebiten</a> library for Golang was used to create the game.
