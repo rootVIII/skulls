@@ -80,7 +80,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     compile project(':skulls')
 }
-// Then synch the change to the build.gradle for the project
+// Then follow screen prompts to sync the build.gradle change to the project
 
 
 // 4. Place the following in app/src/main/java/com.&lt;your username&gt;.skullsmobile/MainActivity.java:
