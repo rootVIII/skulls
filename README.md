@@ -36,6 +36,9 @@
   <li>
     All assets/ (images, audio, and font) were converted to <code>[]byte</code> using <a href="https://github.com/hajimehoshi/file2byteslice">file2byteslice</a>
   </li>
+  <li>
+    The project is intended to be built with gomobile for development and testing, or with ebitenmobile for production releases using Android Studio
+  </li>
 </ul>
 
 ###### Build .apk for development and testing using gomobile:
