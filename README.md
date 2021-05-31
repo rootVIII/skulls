@@ -13,7 +13,10 @@
     The game was developed as a POC to experience creating a simple game with Go/deploying it to Android
   </li>
   <li>
-     The <a href="https://ebiten.org/" target="_blank">Ebiten</a> library for Golang was used to create the game
+    The <a href="https://ebiten.org/" target="_blank">Ebiten</a> library for Golang was used to create the game
+  </li>
+  <li>
+    <a href="https://github.com/hajimehoshi/go-inovation" target="_blank">go-inovation</a> was used as a guide for the ebitenmobile .aar binding
   </li>
   <li>
     All development/debugging was done with the <a href="https://pkg.go.dev/golang.org/x/mobile/cmd/gomobile" target="_blank">gomobile</a> tool and <a href="https://developer.android.com/studio/command-line/adb" target="_blank">adb</a>
