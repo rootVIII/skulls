@@ -49,10 +49,8 @@ adb -s &lt;emulator-name&gt; install skullsgomobile.apk
 // Note: to list available emulators: adb devices -l
 
 
-// 3.  View logging output from the game:
+// 3.  View debug/logging output from the game:
 adb logcat
-
-
   </code>
 </pre>
 <br>
@@ -171,9 +169,7 @@ class EbitenViewWithErrorHandling extends EbitenView {
 &lt;/RelativeLayout&gt;
 
 
-// 7.
-// The game should now be usable in Android Studio (sign project with developer keys, UI adjustments in XML, etc. etc.)
-  </code>
+// 7. The game should now be usable in Android Studio (sign the project with developer keys, UI adjustments in AndroidManifest.xml etc.)
 </pre>
 
 <br>
