@@ -35,7 +35,7 @@
   </li>
 </ul>
 
-###### gomobile, build .apk for development and testing:
+###### Build .apk for development and testing using gomobile:
 
 <pre>
   <code>
@@ -59,7 +59,7 @@ adb logcat
 </pre>
 <br>
 
-###### ebitenmobile, build .aar for Android Studio binding:
+###### Build .aar for Android Studio binding using ebitenmobile:
 
 <pre>
   <code>
@@ -176,7 +176,7 @@ class EbitenViewWithErrorHandling extends EbitenView {
 
 
 // 7.
-// The game should now load in one of the emulators that comes with Android Studio
+// The game should now be usable in Android Studio (sign project with developer keys, UI adjustments in XML, etc. etc.)
   </code>
 </pre>
 
