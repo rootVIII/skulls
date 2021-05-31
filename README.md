@@ -22,10 +22,10 @@
     Android Studio should be downloaded/installed; the AVD emulators are free and convenient
   </li>
   <li>
-    I typically use a pixel4 emulator.
+    I use the AVD emulators that are installable with Android Studio and stored in $ANDROID_HOME/emulator/emulator 
   </li>
   <li>
-    I store an alias in my profile to open an emulator easily via the terminal: <code>alias pixel4='$ANDROID_HOME/emulator/emulator -avd "Pixel_4_API_30"'</code>
+    I store an alias in my profile to open an emulator via simple command such as pixel4: <code>alias pixel4='$ANDROID_HOME/emulator/emulator -avd "Pixel_4_API_30"'</code>
   </li>
   <li>
     Font used for text: <a href="https://www.dafont.com/radioland.font">RADIOLAND.TTF</a> 
@@ -40,18 +40,16 @@
 <pre>
   <code>
 // 1.
-// Navigate to skulls/ and generate a <code>.apk</code> with skullsgomobile/:
+// Navigate to skulls/ and generate a <code>.apk</code> with gomobile:
 gomobile build -target=android github.com/rootVIII/skulls/skullsgomobile
 
 
-// 2.
-// Install the newly created .apk into an already running Android Emulator (from Android Studio):
-adb -s emulator-5554  install skullsgomobile.apk
+// 2. Install the newly created .apk into an already running Android Emulator:
+adb -s &lt;emulator-name&gt; install skullsgomobile.apk
 // Note: to list available emulators: adb devices -l
 
 
-// 3. 
-// View logging output from the game:
+// 3.  View logging output from the game:
 adb logcat
 
 
@@ -63,19 +61,18 @@ adb logcat
 
 <pre>
   <code>
-// 1.
-// Navigate to skulls/ and generate the <code>.aar</code> binding:
+// 1. Navigate to skulls/ and generate the <code>.aar</code> binding:
 ebitenmobile bind -target android -javapkg com.&lt;your-username&gt;.skulls -o skulls.aar github.com/rootVIII/skulls/skullsebitenbind
 
 
-// 2.
-// Open an Empty Activity in Android Studio and name it SkullsMobile
+// 2. Open an Empty Activity in Android Studio and name it SkullsMobile
 
 
-// 3.
-// Import the new .aar as a module:
+// 3. Import the new .aar as a module:
 // Select File, New, New Module, Import .jar/.aar Package, select the previously built .aar named skulls.aar
 // In app/build.gradle, add this line to the dependencies: compile project(':skulls')
+// Example:
+
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.3.0'
     implementation 'com.google.android.material:material:1.3.0'
@@ -88,8 +85,8 @@ dependencies {
 // Then synch the change to the build.gradle for the project
 
 
-// 4.
-// Place the following in app/src/main/java/&lt;your username&gt;/MainActivity.java:
+// 4. Place the following in app/src/main/java/com.&lt;your username&gt;.skullsmobile/MainActivity.java:
+
 package com.&lt;your-username&gt;.skullsmobile;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -127,8 +124,8 @@ public class MainActivity extends AppCompatActivity {
 }
 
 
-// 5.
-// Add a separate error handling class in app/src/main/java/&lt;your-username&gt;/EbitenViewWithErrorHandling.java
+// 5. Add a separate error handling class in app/src/main/java/com.&lt;your-username&gt;skullsmobile/EbitenViewWithErrorHandling.java
+
 package com.solsticenet.skullsmobile;
 
 import android.content.Context;
@@ -155,8 +152,7 @@ class EbitenViewWithErrorHandling extends EbitenView {
 }
 
 
-// 6.
-// Add the below into app/src/main/res/AndroidManifest.xml:
+// 6. Add the below into app/src/main/res/AndroidManifest.xml:
 &lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
