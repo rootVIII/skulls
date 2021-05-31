@@ -10,13 +10,13 @@
 
 <ul>
   <li>
-    The game was developed as a POC to experience creating a simple game with Go/deploying it to Android.
+    The game was developed as a POC to experience creating a simple game with Go/deploying it to Android
   </li>
   <li>
-     The <a href="https://ebiten.org/" target="_blank">Ebiten</a> library for Golang was used to create the game.
+     The <a href="https://ebiten.org/" target="_blank">Ebiten</a> library for Golang was used to create the game
   </li>
   <li>
-    All development/debugging was done with the <a href="https://pkg.go.dev/golang.org/x/mobile/cmd/gomobile" target="_blank">gomobile</a> tool and <a href="https://developer.android.com/studio/command-line/adb" target="_blank">adb</a>.
+    All development/debugging was done with the <a href="https://pkg.go.dev/golang.org/x/mobile/cmd/gomobile" target="_blank">gomobile</a> tool and <a href="https://developer.android.com/studio/command-line/adb" target="_blank">adb</a>
   </li>
   <li>
     Android Studio should be downloaded/installed; the AVD emulators are free and convenient
