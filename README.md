@@ -64,7 +64,7 @@ adb logcat
 </pre>
 <br>
 
-###### Build .aar for Android Studio binding using ebitenmobile:
+###### Build .aar for Android Studio binding and production release using ebitenmobile:
 
 <pre>
   <code>
