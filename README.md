@@ -49,10 +49,12 @@
 gomobile build -target=android github.com/rootVIII/skulls/skullsgomobile
 
 
+
 // 2. Install the newly created .apk into an already running Android Emulator:
 adb -s &lt;emulator-name&gt; install skullsgomobile.apk
 // Note: to list available emulators (including phone connected for debugging):
 adb devices -l
+
 
 
 // 3.  View debug/logging output from the game:
@@ -69,7 +71,9 @@ adb logcat
 ebitenmobile bind -target android -javapkg com.&lt;your-username&gt;.skulls -o skulls.aar github.com/rootVIII/skulls/skullsebitenbind
 
 
+
 // 2. Open an Empty Activity in Android Studio and name it SkullsMobile
+
 
 
 // 3. Import the new .aar as a module:
@@ -87,6 +91,7 @@ dependencies {
     compile project(':skulls')
 }
 // Then follow screen prompts to sync the build.gradle change to the project
+
 
 
 // 4. Place the following in app/src/main/java/com.&lt;your username&gt;.skullsmobile/MainActivity.java:
@@ -128,6 +133,7 @@ public class MainActivity extends AppCompatActivity {
 }
 
 
+
 // 5. Add a separate error handling class in app/src/main/java/com.&lt;your-username&gt;skullsmobile/EbitenViewWithErrorHandling.java
 
 package com.solsticenet.skullsmobile;
@@ -156,6 +162,7 @@ class EbitenViewWithErrorHandling extends EbitenView {
 }
 
 
+
 // 6. Add the below into app/src/main/res/AndroidManifest.xml:
 &lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -173,6 +180,7 @@ class EbitenViewWithErrorHandling extends EbitenView {
         android:layout_height="match_parent"
         android:focusable="true" /&gt;
 &lt;/RelativeLayout&gt;
+
 
 
 // 7. The game should now be usable in Android Studio (sign the project with developer keys, UI adjustments in AndroidManifest.xml etc.)
