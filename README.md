@@ -31,7 +31,7 @@
     Font used for text: <a href="https://www.dafont.com/radioland.font">RADIOLAND.TTF</a> 
   </li>
   <li>
-    All assets (images, audio, and font) were converted to <code>[]byte</code> using <a href="https://github.com/hajimehoshi/file2byteslice">file2byteslice</a>
+    All assets/ (images, audio, and font) were converted to <code>[]byte</code> using <a href="https://github.com/hajimehoshi/file2byteslice">file2byteslice</a>
   </li>
 </ul>
 
