@@ -5,7 +5,9 @@
 <hr>
 <img src="https://images2.imgbox.com/5f/91/zXqDD7WR_o.png" alt="ex2"/>
 <hr>
-<a href="https://play.google.com/store/apps/details?id=com.solsticenet.skullsmobile">Google Play Store</a>
+<a href="https://play.google.com/store/apps/details?id=com.solsticenet.skullsmobile" target="_blank">
+  <img src="https://images2.imgbox.com/82/88/wEAnPcV2_o.png" alt="Google Play Store"/>
+</a>
 
 
 <ul>
