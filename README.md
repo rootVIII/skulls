@@ -28,10 +28,10 @@
     Android Studio should be downloaded/installed; the AVD emulators are free and convenient
   </li>
   <li>
-    I use the AVD emulators that are installable with Android Studio and stored in <code>$ANDROID_HOME/emulator/emulator</code> 
+    I use the AVD emulators that are installable with Android Studio and stored in<br><code>$ANDROID_HOME/emulator/emulator</code> 
   </li>
   <li>
-    I store an alias in my profile to open an emulator via simple command such as pixel4: <code>alias pixel4='$ANDROID_HOME/emulator/emulator -avd "Pixel_4_API_30"'</code>
+    I store an alias in my profile to open an emulator via simple command such as pixel4:<br><code>alias pixel4='$ANDROID_HOME/emulator/emulator -avd "Pixel_4_API_30"'</code>
   </li>
   <li>
     Font used for text: <a href="https://www.dafont.com/radioland.font">RADIOLAND.TTF</a> 
