@@ -1,13 +1,14 @@
 ### Skulls! A simple Columns-like strategy game developed in Golang with the Ebiten library (for Android)
 
+<a href="https://play.google.com/store/apps/details?id=com.solsticenet.skullsmobile" target="_blank">
+  <img src="https://images2.imgbox.com/82/88/wEAnPcV2_o.png" alt="Google Play Store"/>
+</a>
 <hr>
 <img src="https://images2.imgbox.com/a6/ab/4hlQKK3q_o.png" alt="ex1"/>
 <hr>
 <img src="https://images2.imgbox.com/5f/91/zXqDD7WR_o.png" alt="ex2"/>
 <hr>
-<a href="https://play.google.com/store/apps/details?id=com.solsticenet.skullsmobile" target="_blank">
-  <img src="https://images2.imgbox.com/82/88/wEAnPcV2_o.png" alt="Google Play Store"/>
-</a>
+
 
 
 <ul>
