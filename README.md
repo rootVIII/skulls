@@ -31,7 +31,7 @@
     I use the AVD emulators that are installable with Android Studio and stored in<br><code>$ANDROID_HOME/emulator/emulator</code> 
   </li>
   <li>
-    I store an alias in my profile to open an emulator via simple command such as pixel4:<br><code>alias pixel4='$ANDROID_HOME/emulator/emulator -avd "Pixel_4_API_30"'</code>
+    It may be helpful to store an alias in your profile to open an emulator via a simple command:<br><code>alias pixel4='$ANDROID_HOME/emulator/emulator -avd "Pixel_4_API_30"'</code>
   </li>
   <li>
     Font used for text: <a href="https://www.dafont.com/radioland.font">RADIOLAND.TTF</a> 
