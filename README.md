@@ -76,7 +76,7 @@ ebitenmobile bind -target android -javapkg com.&lt;your-username&gt;.skulls -o s
 
 
 
-// 2. Open an Empty Activity in Android Studio and name it SkullsMobile
+// 2. Create a new Android Studio project (choose Empty Activity) and name it SkullsMobile
 
 
 
