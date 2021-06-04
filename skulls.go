@@ -618,7 +618,7 @@ func readAudio(context *audio.Context, asset []byte) (*audio.Player, error) {
 	return player, nil
 }
 
-// Play is the entry point to the game.
+// Load is the entry point to the game.
 func Load() (*Game, error) {
 
 	audioContext := audio.NewContext(44100)
